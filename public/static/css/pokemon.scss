@@ -1,0 +1,38 @@
+a{
+    .motherDivPokemon{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    // font-family: "biko";
+    .leftDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        align-self: center;
+        padding: 0;
+        height: 100%;
+        .nameP{
+            align-self: center;
+            font-size: 1.3rem;
+            padding: 0;
+            margin: 0;    
+            -webkit-letter-spacing: 1px;
+            -moz-letter-spacing: 1px;
+            -ms-letter-spacing: 1px;
+            letter-spacing: 1px;
+            color: #383838;
+            position: relative;
+            margin: auto;
+        }
+    }
+    img{
+        filter: drop-shadow(0 2px 3px rgba(58, 58, 58, 0.4));  
+    }
+}
+}
