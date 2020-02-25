@@ -9777,9 +9777,11 @@ var Pokemon = function Pokemon(props) {
   }, []);
 
   var capitalizeFirstLetter = function capitalizeFirstLetter(string) {
-    console.log(string);
-    console.log(typeof string);
     return string.charAt(0).toUpperCase() + string.slice(1);
+  };
+
+  var lowercaseFirstLetter = function lowercaseFirstLetter(string) {
+    return string.charAt(0).toLowerCase() + string.slice(1);
   };
 
   var fetchData = function fetchData() {
@@ -9798,21 +9800,21 @@ var Pokemon = function Pokemon(props) {
   var name = pokemon.name,
       url = pokemon.url;
   var newTo = {
-    pathname: "/poke/".concat(name),
+    pathname: "/poke/".concat(lowercaseFirstLetter(name)),
     param1: name
   };
   return __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: newTo,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 47
     },
     __self: this
   }, __jsx("a", {
     className: "viewBtn",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 48
     },
     __self: this
   }, pokemon !== null && __jsx("div", {
@@ -9820,21 +9822,21 @@ var Pokemon = function Pokemon(props) {
     key: name,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 50
     },
     __self: this
   }, __jsx("div", {
     className: "leftDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 51
     },
     __self: this
   }, __jsx("p", {
     className: "nameP",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 53
     },
     __self: this
   }, name)), __jsx("img", {
@@ -9842,7 +9844,7 @@ var Pokemon = function Pokemon(props) {
     alt: name,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 56
     },
     __self: this
   }))));
@@ -9868,8 +9870,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/next/dist/build/polyfills/fetch/index.js");
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _pokemon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pokemon */ "./pages/comps/pokemon.js");
-/* harmony import */ var _public_static_css_pokemonList_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../public/static/css/pokemonList.scss */ "./public/static/css/pokemonList.scss");
-/* harmony import */ var _public_static_css_pokemonList_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_public_static_css_pokemonList_scss__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _public_static_css_pokemonList_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../public/static/css/pokemonList.scss */ "./public/static/css/pokemonList.scss");
+/* harmony import */ var _public_static_css_pokemonList_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_public_static_css_pokemonList_scss__WEBPACK_IMPORTED_MODULE_5__);
 
 var _jsxFileName = "/Users/JacobBroughton/coding/projects/Pokedex_Next/pages/comps/pokemonList.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
@@ -10050,7 +10052,7 @@ var Index = function Index(props) {
 
 /***/ }),
 
-/***/ 2:
+/***/ 5:
 /*!************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2FJacobBroughton%2Fcoding%2Fprojects%2FPokedex_Next%2Fpages%2Findex.js ***!
   \************************************************************************************************************************************************/
@@ -10073,5 +10075,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js","styles"]]]);
+},[[5,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

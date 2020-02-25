@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{YxBC:function(n,o,w){(window.__NEXT_P=window.__NEXT_P||[]).push(["/comps/pokemonList",function(){return w("x4J4")}])}},[["YxBC",1,2,0,3,5,4]]]);

@@ -15,9 +15,11 @@ const Pokemon = props => {
   }, []);
 
   let capitalizeFirstLetter = string => {
-    console.log(string);
-    console.log(typeof string);
     return string.charAt(0).toUpperCase() + string.slice(1);
+  };
+
+  let lowercaseFirstLetter = string => {
+    return string.charAt(0).toLowerCase() + string.slice(1);
   };
 
   const fetchData = () => {
@@ -37,7 +39,7 @@ const Pokemon = props => {
 
   const { name, url } = pokemon;
   let newTo = {
-    pathname: `/poke/${name}`,
+    pathname: `/poke/${lowercaseFirstLetter(name)}`,
     param1: name
   };
 

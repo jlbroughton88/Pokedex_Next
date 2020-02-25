@@ -113,6 +113,174 @@ a {
 #fairy {
   background: #f0b6bd; }
 
+img {
+  filter: drop-shadow(0 2px 3px rgba(58, 58, 58, 0.4)); }
+
+.motherDivSingle {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .motherDivSingle .container {
+    padding: 7%;
+    width: 70%;
+    align-self: center;
+    max-width: 720px; }
+    .motherDivSingle .container .nameId {
+      display: flex;
+      flex-direction: row; }
+      .motherDivSingle .container .nameId .nameDiv {
+        width: 75%;
+        margin: 1%;
+        padding: 2.3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: #383838 1px solid;
+        border-radius: 5px;
+        box-shadow: 0 3px 10px rgba(58, 58, 58, 0.4); }
+        .motherDivSingle .container .nameId .nameDiv .name {
+          margin: 0;
+          font-size: 2rem; }
+          @media (min-width: 750px) {
+            .motherDivSingle .container .nameId .nameDiv .name {
+              font-size: 2.2rem; } }
+      .motherDivSingle .container .nameId .idDiv {
+        width: 25%;
+        margin: 1%;
+        border: #383838 1px dotted;
+        padding: 2.3%;
+        font-size: 1.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: #383838 1px solid;
+        border-radius: 5px; }
+    .motherDivSingle .container .spritesDiv {
+      margin: 1%;
+      border: #383838 1px dotted;
+      padding: 2.3%;
+      padding-top: 4%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      border: #383838 1px solid;
+      border-radius: 5px; }
+      .motherDivSingle .container .spritesDiv .defaultDiv .defaultH {
+        margin: 0;
+        font-size: 1.3rem; }
+      .motherDivSingle .container .spritesDiv .shinyDiv .shinyH {
+        margin: 0;
+        font-size: 1.3rem; }
+    .motherDivSingle .container .heightWeight {
+      display: flex;
+      flex-direction: row; }
+      .motherDivSingle .container .heightWeight .heightDiv, .motherDivSingle .container .heightWeight .weightDiv {
+        width: 50%;
+        margin: 1%;
+        border: #383838 1px dotted;
+        padding: 2.3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: #383838 1px solid;
+        border-radius: 5px; }
+        @media (min-width: 750px) {
+          .motherDivSingle .container .heightWeight .heightDiv, .motherDivSingle .container .heightWeight .weightDiv {
+            font-size: 1.4rem; } }
+    .motherDivSingle .container .abilityType {
+      display: flex;
+      flex-direction: row; }
+      .motherDivSingle .container .abilityType .abilityDiv {
+        width: 50%;
+        margin: 1%;
+        border: #383838 1px dotted;
+        padding: 2.3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 130%;
+        border: #383838 1px solid;
+        border-radius: 5px; }
+        .motherDivSingle .container .abilityType .abilityDiv .abilityH {
+          margin: 0;
+          font-size: 1.3rem;
+          margin-bottom: 2%; }
+          @media (min-width: 750px) {
+            .motherDivSingle .container .abilityType .abilityDiv .abilityH {
+              font-size: 1.4rem;
+              margin-bottom: 3%; } }
+        .motherDivSingle .container .abilityType .abilityDiv .ability {
+          border-bottom: 1px solid black;
+          margin: 1%;
+          width: 50%; }
+          @media (max-width: 590px) {
+            .motherDivSingle .container .abilityType .abilityDiv .ability {
+              width: 80%; } }
+          @media (min-width: 750px) {
+            .motherDivSingle .container .abilityType .abilityDiv .ability {
+              font-size: 1.15rem; } }
+      .motherDivSingle .container .abilityType .typesDiv {
+        width: 50%;
+        margin: 1%;
+        border: #383838 1px dotted;
+        padding: 2.3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 140%;
+        border: #383838 1px solid;
+        border-radius: 5px; }
+        .motherDivSingle .container .abilityType .typesDiv .typesH {
+          margin: 0;
+          font-size: 1.3rem; }
+          @media (min-width: 750px) {
+            .motherDivSingle .container .abilityType .typesDiv .typesH {
+              font-size: 1.4rem;
+              margin-bottom: 3%; } }
+        .motherDivSingle .container .abilityType .typesDiv .type {
+          border-radius: 5px;
+          display: flex;
+          align-items: center; }
+    .motherDivSingle .container .statsDiv {
+      margin: 1%;
+      border: #383838 1px dotted;
+      padding: 2.3%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      border: #383838 1px solid;
+      border-radius: 5px; }
+      @media (max-width: 590px) {
+        .motherDivSingle .container .statsDiv {
+          flex-direction: column; } }
+      .motherDivSingle .container .statsDiv .stat {
+        width: 40%;
+        height: 10%;
+        font-size: 1.1rem;
+        margin: 2%;
+        padding: 2%;
+        border-bottom: 1px grey solid; }
+        @media (max-width: 590px) {
+          .motherDivSingle .container .statsDiv .stat {
+            width: 80%;
+            margin: 1%;
+            padding-top: 1%;
+            padding-bottom: 1%; } }
+        @media (min-width: 750px) {
+          .motherDivSingle .container .statsDiv .stat {
+            font-size: 1.3rem; } }
+        @media (min-width: 950px) {
+          .motherDivSingle .container .statsDiv .stat {
+            font-size: 1.45rem; } }
+
 a .motherDivPokemon {
   height: 100%;
   width: 100%;

@@ -1931,9 +1931,11 @@ const Pokemon = props => {
   }, []);
 
   let capitalizeFirstLetter = string => {
-    console.log(string);
-    console.log(typeof string);
     return string.charAt(0).toUpperCase() + string.slice(1);
+  };
+
+  let lowercaseFirstLetter = string => {
+    return string.charAt(0).toLowerCase() + string.slice(1);
   };
 
   const fetchData = () => {
@@ -1950,21 +1952,21 @@ const Pokemon = props => {
     url
   } = pokemon;
   let newTo = {
-    pathname: `/poke/${name}`,
+    pathname: `/poke/${lowercaseFirstLetter(name)}`,
     param1: name
   };
   return __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: newTo,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 47
     },
     __self: undefined
   }, __jsx("a", {
     className: "viewBtn",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 48
     },
     __self: undefined
   }, pokemon !== null && __jsx("div", {
@@ -1972,21 +1974,21 @@ const Pokemon = props => {
     key: name,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 50
     },
     __self: undefined
   }, __jsx("div", {
     className: "leftDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 51
     },
     __self: undefined
   }, __jsx("p", {
     className: "nameP",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 53
     },
     __self: undefined
   }, name)), __jsx("img", {
@@ -1994,7 +1996,7 @@ const Pokemon = props => {
     alt: name,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 56
     },
     __self: undefined
   }))));

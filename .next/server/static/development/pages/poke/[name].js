@@ -1942,6 +1942,11 @@ const PokeSummary = props => {
     0: loading,
     1: setLoading
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+
+  let capitalizeFirstLetter = string => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  };
+
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     fetchData(router.query.name);
   }, [router.query.name]);
@@ -1964,10 +1969,6 @@ const PokeSummary = props => {
     }));
   };
 
-  let capitalizeFirstLetter = string => {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-  };
-
   const {
     id,
     name,
@@ -1987,75 +1988,75 @@ const PokeSummary = props => {
     className: "motherDivSingle",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 79
     },
     __self: undefined
   }, __jsx(_comps_header__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 80
     },
     __self: undefined
   }), __jsx("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 81
     },
     __self: undefined
   }, __jsx("div", {
     className: "nameId",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 82
     },
     __self: undefined
   }, __jsx("div", {
     className: "nameDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 83
     },
     __self: undefined
   }, __jsx("h2", {
     className: "name",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 84
     },
     __self: undefined
   }, capitalizeFirstLetter(name))), __jsx("div", {
     className: "idDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 86
     },
     __self: undefined
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 87
     },
     __self: undefined
   }, "#", id))), __jsx("div", {
     className: "spritesDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 91
     },
     __self: undefined
   }, __jsx("div", {
     className: "defaultDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 92
     },
     __self: undefined
   }, __jsx("h4", {
     className: "defaultH",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 93
     },
     __self: undefined
   }, "Default"), __jsx("img", {
@@ -2063,7 +2064,7 @@ const PokeSummary = props => {
     alt: sprites.front_default,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 94
     },
     __self: undefined
   }), __jsx("img", {
@@ -2071,21 +2072,21 @@ const PokeSummary = props => {
     alt: sprites.back_default,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92
+      lineNumber: 95
     },
     __self: undefined
   })), __jsx("div", {
     className: "shinyDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 98
     },
     __self: undefined
   }, __jsx("div", {
     className: "shinyH",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 99
     },
     __self: undefined
   }, "Shiny"), __jsx("img", {
@@ -2093,7 +2094,7 @@ const PokeSummary = props => {
     alt: sprites.front_shiny,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 100
     },
     __self: undefined
   }), __jsx("img", {
@@ -2101,31 +2102,18 @@ const PokeSummary = props => {
     alt: sprites.back_shiny,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 101
     },
     __self: undefined
   }))), __jsx("div", {
     className: "heightWeight",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
+      lineNumber: 104
     },
     __self: undefined
   }, __jsx("div", {
     className: "heightDiv",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 102
-    },
-    __self: undefined
-  }, __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 103
-    },
-    __self: undefined
-  }, "Height: ", height / 2, "ft")), __jsx("div", {
-    className: "weightDiv",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 105
@@ -2137,25 +2125,38 @@ const PokeSummary = props => {
       lineNumber: 106
     },
     __self: undefined
+  }, "Height: ", height / 2, "ft")), __jsx("div", {
+    className: "weightDiv",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 108
+    },
+    __self: undefined
+  }, __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 109
+    },
+    __self: undefined
   }, "Weight: ", weight, "lbs"))), __jsx("div", {
     className: "abilityType",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 112
     },
     __self: undefined
   }, __jsx("div", {
     className: "abilityDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 113
     },
     __self: undefined
   }, __jsx("h4", {
     className: "abilitiesH",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 114
     },
     __self: undefined
   }, "Abilities:"), abilities.map(ablty => {
@@ -2164,13 +2165,13 @@ const PokeSummary = props => {
       key: ablty.ability.name,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 114
+        lineNumber: 117
       },
       __self: undefined
     }, capitalizeFirstLetter(ablty.ability.name), __jsx("br", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 116
+        lineNumber: 119
       },
       __self: undefined
     }));
@@ -2178,14 +2179,14 @@ const PokeSummary = props => {
     className: "typesDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121
+      lineNumber: 124
     },
     __self: undefined
   }, __jsx("div", {
     className: "typesH",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122
+      lineNumber: 125
     },
     __self: undefined
   }, "Types:"), types.map(typ => {
@@ -2195,7 +2196,7 @@ const PokeSummary = props => {
       key: typ.type.name,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 125
+        lineNumber: 128
       },
       __self: undefined
     }, capitalizeFirstLetter(typ.type.name));
@@ -2203,7 +2204,7 @@ const PokeSummary = props => {
     className: "statsDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 133
+      lineNumber: 136
     },
     __self: undefined
   }, stats.map(stt => {
@@ -2213,20 +2214,20 @@ const PokeSummary = props => {
       key: stt.stat.name,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 137
+        lineNumber: 140
       },
       __self: undefined
     }, capitalizeFirstLetter(stt.stat.name), ": ", stt.base_stat, __jsx("br", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 139
+        lineNumber: 142
       },
       __self: undefined
     }));
   }))), __jsx(_comps_footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 145
+      lineNumber: 148
     },
     __self: undefined
   }));

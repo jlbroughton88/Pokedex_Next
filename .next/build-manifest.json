@@ -1,35 +1,89 @@
 {
-  "devFiles": [
-    "static/development/dll/dll_d6a88dbe3071bd165157.js",
-    "static/development/dll/dll_d6a88dbe3071bd165157.js.map"
-  ],
+  "devFiles": [],
   "pages": {
     "/": [
-      "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-4b444dab214c6491079c.js",
+      "static/chunks/framework.74d547792b3163b4d6d2.js",
+      "static/chunks/commons.c28bac984b597bbefc5b.js",
+      "static/chunks/55732119b93e56fb35c945f2eb81712835f96707.a9b27a1eb79cf02e7b62.js",
+      "static/chunks/212096dd2fd19a97b467c5a74160afbc35794c60.c895be766b6500220f75.js",
+      "static/css/styles.d6d4d30c.chunk.css",
+      "static/chunks/styles.b968d54bbc844dc0b141.js",
+      "static/runtime/main-f09d8e944746bc2421f2.js"
     ],
     "/_app": [
-      "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/runtime/main.js",
-      "static/development/_buildManifest.js"
+      "static/runtime/webpack-4b444dab214c6491079c.js",
+      "static/chunks/framework.74d547792b3163b4d6d2.js",
+      "static/chunks/commons.c28bac984b597bbefc5b.js",
+      "static/chunks/55732119b93e56fb35c945f2eb81712835f96707.a9b27a1eb79cf02e7b62.js",
+      "static/css/styles.d6d4d30c.chunk.css",
+      "static/chunks/styles.b968d54bbc844dc0b141.js",
+      "static/runtime/main-f09d8e944746bc2421f2.js",
+      "static/cBkjJYg0xqQrnh7mme2nG/_buildManifest.js"
     ],
     "/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-4b444dab214c6491079c.js",
+      "static/chunks/framework.74d547792b3163b4d6d2.js",
+      "static/chunks/commons.c28bac984b597bbefc5b.js",
+      "static/runtime/main-f09d8e944746bc2421f2.js"
     ],
     "/_polyfills": [
-      "static/runtime/polyfills.js",
-      "static/runtime/polyfills.js.map"
+      "static/runtime/polyfills-e8011738b1ac3730e620.js"
+    ],
+    "/comps/footer": [
+      "static/runtime/webpack-4b444dab214c6491079c.js",
+      "static/chunks/framework.74d547792b3163b4d6d2.js",
+      "static/chunks/commons.c28bac984b597bbefc5b.js",
+      "static/css/styles.d6d4d30c.chunk.css",
+      "static/chunks/styles.b968d54bbc844dc0b141.js",
+      "static/runtime/main-f09d8e944746bc2421f2.js"
+    ],
+    "/comps/header": [
+      "static/runtime/webpack-4b444dab214c6491079c.js",
+      "static/chunks/framework.74d547792b3163b4d6d2.js",
+      "static/chunks/commons.c28bac984b597bbefc5b.js",
+      "static/chunks/55732119b93e56fb35c945f2eb81712835f96707.a9b27a1eb79cf02e7b62.js",
+      "static/css/styles.d6d4d30c.chunk.css",
+      "static/chunks/styles.b968d54bbc844dc0b141.js",
+      "static/runtime/main-f09d8e944746bc2421f2.js"
+    ],
+    "/comps/pokemon": [
+      "static/runtime/webpack-4b444dab214c6491079c.js",
+      "static/chunks/framework.74d547792b3163b4d6d2.js",
+      "static/chunks/commons.c28bac984b597bbefc5b.js",
+      "static/chunks/55732119b93e56fb35c945f2eb81712835f96707.a9b27a1eb79cf02e7b62.js",
+      "static/css/styles.d6d4d30c.chunk.css",
+      "static/chunks/styles.b968d54bbc844dc0b141.js",
+      "static/runtime/main-f09d8e944746bc2421f2.js"
+    ],
+    "/comps/pokemonList": [
+      "static/runtime/webpack-4b444dab214c6491079c.js",
+      "static/chunks/framework.74d547792b3163b4d6d2.js",
+      "static/chunks/commons.c28bac984b597bbefc5b.js",
+      "static/chunks/55732119b93e56fb35c945f2eb81712835f96707.a9b27a1eb79cf02e7b62.js",
+      "static/chunks/212096dd2fd19a97b467c5a74160afbc35794c60.c895be766b6500220f75.js",
+      "static/css/styles.d6d4d30c.chunk.css",
+      "static/chunks/styles.b968d54bbc844dc0b141.js",
+      "static/runtime/main-f09d8e944746bc2421f2.js"
     ],
     "/index": [
-      "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-4b444dab214c6491079c.js",
+      "static/chunks/framework.74d547792b3163b4d6d2.js",
+      "static/chunks/commons.c28bac984b597bbefc5b.js",
+      "static/chunks/55732119b93e56fb35c945f2eb81712835f96707.a9b27a1eb79cf02e7b62.js",
+      "static/chunks/212096dd2fd19a97b467c5a74160afbc35794c60.c895be766b6500220f75.js",
+      "static/css/styles.d6d4d30c.chunk.css",
+      "static/chunks/styles.b968d54bbc844dc0b141.js",
+      "static/runtime/main-f09d8e944746bc2421f2.js"
+    ],
+    "/poke/[name]": [
+      "static/runtime/webpack-4b444dab214c6491079c.js",
+      "static/chunks/framework.74d547792b3163b4d6d2.js",
+      "static/chunks/commons.c28bac984b597bbefc5b.js",
+      "static/chunks/55732119b93e56fb35c945f2eb81712835f96707.a9b27a1eb79cf02e7b62.js",
+      "static/css/styles.d6d4d30c.chunk.css",
+      "static/chunks/styles.b968d54bbc844dc0b141.js",
+      "static/runtime/main-f09d8e944746bc2421f2.js"
     ]
   }
 }

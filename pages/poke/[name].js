@@ -25,6 +25,11 @@ const PokeSummary = props => {
     height: 0
   });
   const [loading, setLoading] = useState(false);
+  
+  let capitalizeFirstLetter = string => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  };
+
 
   useEffect(() => {
     fetchData(router.query.name);
@@ -52,9 +57,7 @@ const PokeSummary = props => {
       );
   };
 
-  let capitalizeFirstLetter = string => {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-  };
+
 
   const {
     id,
